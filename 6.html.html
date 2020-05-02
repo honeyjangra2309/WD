@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>regular expression</title>
+</head>
+<body>
+    <script>
+        function validation()
+        {
+           
+        var usrname=document.getElementById("name").value;
+        var regx=/E00/;
+        if(regx.test(usrname))
+        {
+            alert("valid Username");
+        }
+        else
+        {
+            alert("Invalid Username"); 
+        }
+        return;
+        }
+    </script>
+    <form >
+        <h2>Form validation</h2><hr><br>
+       Enter username <input id="name" type="text" placeholder="username" name="username">
+       <input onclick="validation()" type="submit" name="submit">
+
+    </form>
+</body>
